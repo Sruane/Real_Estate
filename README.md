@@ -10,8 +10,3 @@ Models planned to be used:
 * Model averaging (bagging/boosting)
 * Econometric models
 
-Data
-* 
-
-
-
