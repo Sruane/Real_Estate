@@ -1,5 +1,5 @@
 # Real_Estate
-Repository for Bus 895 Real Estate term project at SFSU
+Repository for Bus 895 Real Estate term project at SFSU <br>
 SFSU Finance Professor Chris Yost-Bremm is my mentor on this project. He has extensive domain knoweldge in the quantative evaluation of real estate prices
 
 Project Idea:
