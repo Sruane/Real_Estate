@@ -2,25 +2,12 @@ Overview:<br>
 This is the repository for my Masters' thesis in the Masters of Business Analytics program at San Francisco State University (SFSU) <br>
 Chris Yost-Bremm, Ph.D. and Finance Professor at SFSU, supervised my thesis. He has extensive domain knoweldge in the quantative evaluation of real estate prices, and supported the devlopment of the thesis, as well as evaluation of the model. His profile can be found here: https://www.linkedin.com/in/chrisyb/
 
-Project Goal:<br>
-Using Python as the coding language and Zillow data as the input data, create portfolios of metropolitan regions in the United States that behave similarly based on value and momentum metrics. 5 Portfolios for value and 5 portfolios for momentum are created and their signals evaluated independently of eachother. Then the 10 portfolios are interacted and the combined singals are evaluated.
+Project Details:<br>
+The goal of this project is to apply the ideology of the article Value and Momentum Everywhere to the novel field of real estate portfolio creation. In the article, stock portfolios are created using two different signals: value and momentum. These signals are often analyzed independently of each other and indicate to stock investors which stocks to buy, and which to sell. A high value signal indicates a stock’s price is underestimated and the stock is worth more than it is trading for, whereas a high momentum signal indicates that a stock’s price performance is excellent, and strong returns are likely to continue (Rabener, 2019). Stock investors have used both value and momentum strategies independent of each other for decades, and this history is well-documented. However, Clifford S. Asness, Tobias J. Moskowitz, and Lasse Heje Pedersen were the first to combine the signals and discovered factors that were not reflected when using only one signal. Not only did the combined signal portfolios generate greater returns than portfolios created from individual signals, but the study also discovered that asset classes outside of the stock market could be effectively substituted in the model. 
+
+The findings of value and momentum in areas outside Wall Street was the inspiration for expanding the methodology to real estate. The potential rewards are high if this method is effectively applied by a real estate investment company because no study so far has expanded value and momentum to real estate portfolios. Therefore, this project aims to create working model as a proof of concept that could later be scaled to production. Using Zillow housing data as the historical data, value and momentum is calculated for each available region, ranked from high to low, and then split into 5 equal sized quantiles. The quantiles of regions then become the investment portfolios which are evaluated based on the Sharpe Ratios of the quantiles. Regions in the top quantiles have the largest Sharpe Ratios and are regions that should be invested in while regions in the bottom quantiles are sold or not purchased in the first place. 
+
+The next step is to interact the two signals in matrix format and reexamine what portfolios have the strongest signals when looking at both value and momentum. When the signals are multiplied together the intersection of the highest quantile is highlighted as a superb investment choice along with the intersection lowest quantile. The high quantile is intuitive investment choice because this quantile has the strongest positive signals, However,  the fact that the lowest quantile was also highlighted as an optimal risk to reward quantile is not an intuitive investment because this quantile contains the lowest positive signals. These findings depict that when markets are in a downward trend but are expensive, they are still good investment opportunity even though they have low value and low momentum.
 
 Data Source:<br>
 https://www.zillow.com/research/data/
-
-
-Development: <br>
-First I did exploratory analysis on the dataset and isolated the inidators to be used in the anlysis. 
-* Metro region chosen as the main region type
-* ZHVI (Zillow Home Value Index) was intitally chosen as the home price indicator - however after running the analysis on this indicator I realized it was too smooth and has been adjusted by Zillow making it less depictive of the true fluctuation in home prices.
-* ZALL (Zillow All Homes) is the final inidcator selected for home prices as it contains raw data for home prices that has not been adjusted by Zillow for seasonality or other adjustments
-* ZORI (Zillow Observed Rent Index) is the indicator chosen for rent prices
-
-Model: <br>
-* Value and momentum econometric models are selected as primary analysis models
-* Inspiration to use these models is from the *Value and Momentum Everywhere* article by Clifford S. Asness, Tobias J. Moskowitz, and Lasse H. Pedersen. A copy of the article can be found here http://schwert.ssb.rochester.edu/f532/AMP12.pdf
-* The key differences between the article and my model is the substitution of home prices for stock prices, and my definition of value, which was translated to the ratio of rent/home price for each month
-* Besides this key difference, the methodology in the article is followed closely
-<br>
-Evaluation
-
