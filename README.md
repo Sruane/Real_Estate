@@ -1,10 +1,9 @@
-# Real_Estate
-Repository for Bus 895 Real Estate term project at San Francisco State University (SFSU) <br>
-Chris Yost-Bremm, Finance Professor at SFSU, is my mentor on this project. He has extensive domain knoweldge in the quantative evaluation of real estate prices
+Overview:
+This is the repository for my Masters' thesis in the Masters of Business Analytics program at San Francisco State University (SFSU) <br>
+Chris Yost-Bremm, Ph.D. and Finance Professor at SFSU, supervised my thesis. He has extensive domain knoweldge in the quantative evaluation of real estate prices, and supported the devlopment of the thesis, as well as evaluation. His profile can be found here: https://www.linkedin.com/in/chrisyb/
 
 Project Goal:
-Build multiple machine learning models to predict the price of residential real estate in local markets around the United States.
-
+Build portfolios of metropolitan regions in the United States that behave similarly based on value and momentum metrics. Highlight which portfolios provide the best return on investment. 5 Portfolios for both value and momentum are created 
 Models planned to be used:
 * Elastic nets
 * Model averaging (bagging/boosting)
