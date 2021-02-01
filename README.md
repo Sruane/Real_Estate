@@ -6,9 +6,11 @@ Chris Yost-Bremm, Ph.D. and Finance Professor at SFSU, supervised my thesis. He 
 <br>
 
 Project Goal:<br>
+
 Using Python as the coding language and Zillow data as the input data, create portfolios of metropolitan regions in the United States that behave similarly based on value and momentum metrics. 5 Portfolios for value and 5 portfolios for momentum are created and their signals evaluated independently of eachother. Then the 10 portfolios are interacted and the combined singals are evaluated.
 
 Data Source:<br>
+
 https://www.zillow.com/research/data/
 <br>
 Development: <br>
